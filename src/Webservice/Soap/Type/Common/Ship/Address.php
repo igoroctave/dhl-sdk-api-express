@@ -92,9 +92,13 @@ class Address
      */
     public function __construct($city, $postalCode, $countryCode)
     {
-        $this->setCity($city)
+        $this
             ->setPostalCode($postalCode)
             ->setCountryCode($countryCode);
+
+        if ($city) {
+            $this->setCity($city);
+        }
     }
 
     /**

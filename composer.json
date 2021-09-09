@@ -1,5 +1,5 @@
 {
-    "name": "dhl/sdk-api-express",
+    "name": "deadkash/dhl-api-express",
     "description": "API communication to the DHL Express web services.",
     "type": "library",
     "license": "MIT",
