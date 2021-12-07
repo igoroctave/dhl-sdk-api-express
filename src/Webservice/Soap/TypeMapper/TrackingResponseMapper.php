@@ -128,7 +128,8 @@ class TrackingResponseMapper
                 $shipmentEvent->getDate(),
                 $shipmentEvent->getTime(),
                 $shipmentEvent->getServiceArea()->getDescription(),
-                $shipmentEvent->getServiceEvent()->getDescription()
+                $shipmentEvent->getServiceEvent()->getDescription(),
+                $shipmentEvent->getServiceEvent()->getEventCode()
             );
         }
 

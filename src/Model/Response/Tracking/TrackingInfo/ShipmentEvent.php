@@ -44,19 +44,26 @@ class ShipmentEvent implements ShipmentEventInterface
     private $description;
 
     /**
+     * @var string
+     */
+    private $code;
+
+    /**
      * ShipmentEvent constructor.
      *
      * @param string $date
      * @param string $time
      * @param string $locationDescription
      * @param string $description
+     * @param string $code
      */
-    public function __construct($date, $time, $locationDescription, $description)
+    public function __construct($date, $time, $locationDescription, $description, $code)
     {
         $this->date = $date;
         $this->time = $time;
         $this->locationDescription = $locationDescription;
         $this->description = $description;
+        $this->code = $code;
     }
 
     public function getDate()
@@ -77,5 +84,10 @@ class ShipmentEvent implements ShipmentEventInterface
     public function getDescription()
     {
         return (string) $this->description;
+    }
+
+    public function getCode()
+    {
+        return (string) $this->code;
     }
 }
